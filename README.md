@@ -16,19 +16,19 @@ Frontend design of a simple website of an IT consultancy company.
 
 **Find us** - map with address + contact form for general enquires
 
-###Built With
+##Built With
 
 HTML5, CSS3, JavaScript and jQuery
 
-###Authors
+##Authors
 
 Radoslaw Soltan
 
-###License
+##License
 
 This project is under the MIT License - see the LICENSE.md file for details.
 
-###Acknowledgments
+##Acknowledgments
 1. Menu items hover effects ("menuItem" class in main.css) based on: https://codepen.io/d2k/pen/jEmWXq created by Dominik Biedebach (https://codepen.io/d2k/)
    
 2. Button with "readMoreLink" class in main.css based on: https://codepen.io/andreasstorm/pen/oqKbLq created by Andreas Storm (https://codepen.io/andreasstorm/)
