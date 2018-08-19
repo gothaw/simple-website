@@ -1,6 +1,6 @@
 # simple-website
 
-Frontend design of a simple website of an IT consultancy company.
+Frontend design of a simple static website of an IT company.
 
 **Website structure:**
 
@@ -27,6 +27,10 @@ Radoslaw Soltan
 ### License
 
 This project is under the MIT License - see the LICENSE.md file for details.
+
+### Browser Support
+
+Extensive compatibility checks with different browsers have not been carried out. The website should be supported by most modern browsers, however, additional coding has to be done for the support of IE.
 
 ### Acknowledgments
 1. Menu items hover effects ("menuItem" class in main.css) based on: https://codepen.io/d2k/pen/jEmWXq created by Dominik Biedebach (https://codepen.io/d2k/)
