@@ -1,6 +1,6 @@
 (function () {
 
-    const $jobTitle            = $('.jobTitle, .toggleSymbolJobDescription')
+    const $jobTitle            = $('.jobTitle, .toggleSymbolJobDescription');
     const $jobDescription      = $('.jobDescription');
     const $toggleSymbol        = $('.toggleSymbolJobDescription');
 
