@@ -1,0 +1,23 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "simple static website for IT consultancy",
+  "main": "index.html",
+  "scripts": {
+    "startServer":
+            "browser-sync start --directory --server --files '*.js, *.html, .css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gothaw/simple-website.git"
+  },
+  "author": "gothaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gothaw/simple-website/issues"
+  },
+  "homepage": "https://github.com/gothaw/simple-website#readme",
+  "devDependencies": {
+    "browser-sync": "~2.24.7"
+  }
+}

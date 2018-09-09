@@ -56,10 +56,10 @@ html, body{  width: 100%;  height: 100%;  }
 /* ======================================   1.0 GENERAL SECTION ===================================================== */
 /* ================================================================================================================== */
 :root{
-    --main-color-darker: #DA4836;
-    --main-color-lighter: #fc7335;
-    --color-background: #fbf4c2;
-    --color-background-horizontal-lines: #beb38b;
+    --main-color-darker: #fb6235;
+    --main-color-lighter: #FBB03B;
+    --color-background: #feffdd;
+    --color-background-horizontal-lines: #b7b48b;
 }
 .inner1{
     width: 60%;
