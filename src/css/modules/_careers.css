@@ -1,0 +1,183 @@
+/* ================================================================================================================== */
+/* ======================================   8.0 CAREERS MAIN SECTION ================================================ */
+/* ================================================================================================================== */
+.careers{
+    border-top: var(--color-background-horizontal-lines) 1px solid;
+}
+.careersTitle{
+    margin: 10px auto;
+    padding-bottom: 10px;
+    border-bottom: var(--color-background-horizontal-lines) 1px solid;
+}
+@media(max-width:800px) {
+    .careers h3{
+        text-align: center;
+    }
+}
+/* ======================================   8.1 OPEN POSITIONS  ===================================================== */
+.job{
+    position: relative;
+}
+.jobTitle{
+    background-color: var(--main-color-lighter);
+    padding: 15px 20px;
+    border: black 1px solid;
+    cursor: pointer;
+}
+.jobDescription{
+    background-color: var(--main-color-darker);
+    border: black 1px solid;
+    margin-bottom: 12px;
+    padding: 20px;
+}
+.jobDescription p{
+    margin-bottom: 10px;
+}
+.jobDescription li{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: circle;
+}
+.toggleSymbolJobDescription{
+    position: absolute;
+    right: 3%;
+    top: 8px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #000;
+    color: var(--main-color-lighter);
+    font-family: sans-serif, "Arial Unicode MS", Arial;
+    transition: 0.4s;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+}
+.rotateToggleSymbol{
+    transform: rotateZ(0);
+}
+/* ======================================   8.2 SPECULATIVE APPLICATION  ============================================ */
+.applicationTitle2{
+    display: none;
+}
+.speculativeApplication{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 4fr;
+}
+.speculativeApplicationForm p{
+    margin-bottom: 10px;
+}
+.speculativeApplicationForm{
+    margin: 50px 0 20px;
+    background-color: var(--main-color-darker);
+    padding: 20px 30px 10px 30px;
+    z-index: 10;
+    border: black 1px solid;
+    grid-column: 2/4;
+    grid-row: 1;
+}
+.applicationImg{
+    grid-column: 3/5;
+    grid-row: 1;
+}
+.speculativeApplicationFormWrapper{
+    max-width: 2500px;
+    margin: 0 auto;
+}
+.applyForm input[type="text"], .applyForm input[type="email"], .applyForm input[type="submit"], .applyForm textarea{
+    font-family: 'Open Sans', sans-serif;
+    border: black 1px solid;
+}
+.applyForm input[type="file"], .applyForm option, .applyForm option{
+    font-family: 'Open Sans', sans-serif;
+}
+.applyForm input[type="text"], .applyForm input[type="email"], .applyForm textarea, .applyForm input[type="file"], .applyForm option{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.applyForm textarea{
+    resize: none;
+    height: 250px;
+}
+.areasOfInterest{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-gap: 10px;
+    margin: 10px 0;
+}
+.applyTextAreas label, .attachments label, .areasOfInterestLabel{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.hearAboutUsLabel{
+    font-weight: bold;
+}
+.applyForm select{
+    margin: 5px 0 10px 20px;
+}
+.applyForm input[type="submit"]{
+    display: block;
+    width: 100px;
+    margin: 10px auto 5px;
+    background-color: var(--main-color-lighter);
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+    z-index: 1;
+}
+.applyForm input[type="submit"]:hover{
+    color: var(--main-color-lighter);
+    background: #000;
+    transition: all 0.4s;
+}
+@media(max-width:1350px){
+    .applicationTitle1{
+        display: none;
+    }
+    .applicationTitle2{
+        display: block;
+        text-align: center;
+    }
+    .speculativeApplication{
+        display: block;
+    }
+    .speculativeApplicationForm{
+        border: none;
+        border-top: black 1px solid;
+        margin: 0;
+    }
+    .speculativeApplicationFormWrapper{
+        max-width: 800px;
+    }
+    .applicationImg img{
+        display: none;
+    }
+    .applicationImg{
+        background: url("../img/about_us_img.jpg") bottom no-repeat fixed;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+}
+@media(min-width:4000px){
+    .speculativeApplication{
+        display: block;
+    }
+    .speculativeApplicationForm{
+        border: none;
+        border-top: black 1px solid;
+        margin: 0;
+    }
+    .applicationImg{
+        width: 2500px;
+        margin: 0 auto;
+    }
+    .speculativeApplicationFormWrapper{
+        max-width: 800px;
+    }
+}

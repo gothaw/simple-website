@@ -1,5 +1,5 @@
 (function () {
-    if ($('#careersId'))
+    if ($('#projectsId').length)
     {
         const $appDescription        = $('.appDescription');
         const $appThumb              = $('.appThumbnail');

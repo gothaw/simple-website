@@ -1,5 +1,5 @@
 (function () {
-    if($('#aboutUsId'))
+    if($('#aboutUsId').length)
     {
         const $frontFace        = $('.front');
         const $backFace         = $('.back');

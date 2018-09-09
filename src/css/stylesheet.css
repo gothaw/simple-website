@@ -1,0 +1,355 @@
+/* ================================================================================================================== */
+/* ======================================   CSS RESET =============================================================== */
+/* ================================================================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body{  width: 100%;  height: 100%;  }
+/* ================================================================================================================== */
+/* ======================================   CONTENTS ================================================================ */
+/* ================================================================================================================== */
+/*
+        1. GENERAL SECTION
+        2. HEADER SECTION
+            2.1 NAVIGATION BAR
+            2.2 BACKGROUND IMAGE
+        3. FOOTER SECTION
+        4. HOME MAIN SECTION
+            4.1 SKILL BAR
+            4.2 ABOUT US
+            4.3 PROJECTS
+            4.4 WHAT OUR CLIENTS SAY
+            4.5 LATEST NEWS
+            4.6 CONTACT US
+        5. PROJECTS MAIN SECTION
+            5.1 WEB AND US PROJECTS
+            5.2 APP DEVELOPMENT
+        6. NEWS MAIN SECTION
+        7. ABOUT US MAIN SECTION
+            7.1 OUR TEAM
+            7.2 ABOUT US
+            7.3 OUR STORY
+        8. CAREERS MAIN SECTION
+            8.1 OPEN POSITIONS
+            8.2 SPECULATIVE APPLICATION
+        9. FIND US MAIN SECTION
+            9.1 FIND US
+            9.2 CONTACT US
+        10. GENERAL MEDIA QUERIES
+        11. ACKNOWLEDGMENTS
+ */
+/* ================================================================================================================== */
+/* ======================================   1.0 GENERAL SECTION ===================================================== */
+/* ================================================================================================================== */
+:root{
+    --main-color-darker: #fb6235;
+    --main-color-lighter: #FBB03B;
+    --color-background: #feffdd;
+    --color-background-horizontal-lines: #b7b48b;
+}
+.inner1{
+    width: 60%;
+    margin: 0 auto;
+}
+.inner2{
+    width: 60%;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--color-background);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+h2,h3,h4{
+    font-family: 'Patua One', cursive;
+}
+h3{
+    font-size: 26px;
+    margin-bottom: 14px;
+    line-height: 35px;
+}
+h4{
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+.imgResponsive{
+    width: 100%;
+    height: auto;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* ================================================================================================================== */
+/* ======================================   2. HEADER SECTION ======================================================= */
+/* ================================================================================================================== */
+/* ======================================   2.1 NAVIGATION BAR ====================================================== */
+
+.navBar{
+    background-color: var(--main-color-lighter);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: black 1px solid;
+}
+.navBarItems{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+.logoImg{
+    /*border: black 1px solid;*/
+    min-width: 30%;
+}
+.socialMediaIconsHeader{
+    /*border: black 1px solid;*/
+    width: 20%;
+    text-align: right;
+    padding-right: 2%;
+}
+.iconMid{
+    padding: 0 15px;
+}
+.menuItem{
+    /*border: black 1px solid;*/
+    min-width: 10%;
+    text-align: center;
+    font-family: 'Patua One', cursive;
+    overflow: hidden;
+}
+.menuItem a{
+    display: block;
+    /*border: black 1px solid;*/
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    position: relative;
+    z-index: 1;
+    padding: 13px 0;
+    margin: 0 auto;
+}
+.menuItem a:hover{
+    color: var(--main-color-lighter);
+    transition: all 0.4s;
+}
+.menuItem a::before{
+    content: '';
+    position: absolute;
+    width: 500%;
+    height: 300px;
+    top: 100px;
+    right: 400px;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.menuItem a:hover::before{
+    top: -100%;
+    right: -200%;
+    background: #000;
+}
+.menuItem a:active{
+    text-decoration: underline;
+}
+@media(max-width:1000px){
+    .logoImg{
+        min-width: 100%;
+        text-align: center;
+    }
+    .menuItem{
+        min-width: 15%;
+    }
+    .socialMediaIconsHeader{
+        min-width: 25%;
+    }
+}
+@media(max-width:650px){
+    .menuItem{
+        min-width: 32%;
+    }
+    .menuItem:nth-child(6), .menuItem:nth-child(5){
+        min-width: 50%;
+    }
+    .socialMediaIconsHeader{
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+    }
+    .navBar{
+        position: absolute;
+    }
+}
+@media(min-width:4000px){
+    .navBarItems{
+        max-width: 2500px;
+    }
+}
+/* ======================================   2.2 BACKGROUND IMAGE ==================================================== */
+.headerImg1, .headerImg2, .headerImg3{
+    text-align: center;
+    position: relative;
+    height: 800px;
+}
+.headerImg1{
+    background: url("../img/background_img/background_img_1.jpg") bottom no-repeat fixed;
+    background-size: cover;
+}
+.headerImg2{
+    background: url("../img/background_img/background_img_2.jpg") bottom no-repeat fixed;
+    background-size: cover;
+}
+.headerImg3{
+    background: url("../img/background_img/background_img_3.jpg") bottom no-repeat fixed;
+    background-size: cover;
+}
+.mainCaption, .secondaryCaption{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4em;
+}
+.mainCaption{
+    top: 30%;
+    font-size: 48px;
+    letter-spacing: 0.08em;
+    font-family: 'Merienda One', cursive;
+}
+.secondaryCaption{
+    top: 65%;
+    font-size: 35px;
+    letter-spacing: 0.05em;
+}
+.border{
+    display: inline-block;
+    background-color: #4c4947;
+    color: #efedef;
+    padding: 2px 14px;
+}
+@media(max-width:800px){
+    .headerImg1{
+        background-position: 80% 50%;
+    }
+}
+@media(min-width:2500px) {
+    .headerImg1, .headerImg2, .headerImg3{
+        height: 1000px;
+    }
+    .headerImg1{
+        background-position: -50% 50%;
+    }
+    .headerImg2{
+        background-position: -50% 50%;
+    }
+    .headerImg3{
+        background-position: -50% 50%;
+    }
+}
+/* ================================================================================================================== */
+/* ======================================   3.0 FOOTER SECTION ====================================================== */
+/* ================================================================================================================== */
+footer{
+    border-top: black 1px solid;
+    background-color: var(--main-color-lighter);
+    text-align: center;
+}
+footer p{
+    font-size: 12px;
+    margin: 20px auto 5px;
+    font-family: 'Merienda One', cursive;
+}
+.disclaimer{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0 20px;
+}
+
+/* ================================================================================================================== */
+/* =====================================   10. GENERAL MEDIA QUERIES ================================================ */
+/* ================================================================================================================== */
+
+@media(max-width:800px){
+    .headerImg1, .headerImg2, .headerImg3, .aboutUsHomeImg, .contactUsImg, .imgWebProject, .applicationImg{
+        background-attachment:scroll;
+    }
+}
+@media(min-width:2500px){
+    .headerImg1, .headerImg2, .headerImg3, .aboutUsHomeImg, .contactUsImg, .imgWebProject, .applicationImg{
+        background-attachment:scroll;
+    }
+}
+@media(max-width: 1350px){
+    .inner1{
+        width: 100%;
+    }
+    .inner2{
+        width: 90%;
+    }
+}
+@media(min-width: 4000px){
+    .inner1{
+        width: 100%;
+        max-width: 2500px;
+    }
+    .inner2{
+        width: 100%;
+        max-width: 2500px;
+    }
+}
+/* ================================================================================================================== */
+/* =====================================   11. ACKNOWLEDGMENTS ====================================================== */
+/* ================================================================================================================== */
+/*
+    1. Menu items hover effects ("menuItem" class) based on:
+    https://codepen.io/d2k/pen/jEmWXq
+    created by Dominik Biedebach (https://codepen.io/d2k/)
+
+    2. Button with "readMoreLink" class based on:
+    https://codepen.io/andreasstorm/pen/oqKbLq
+    created by Andreas Storm (https://codepen.io/andreasstorm/)
+
+    3. Time Line (section 7.3) based on:
+    https://codepen.io/ArnaudBalland/pen/rLeQgd
+    created by Arnaud Balland (https://codepen.io/ArnaudBalland/)
+
+    4. All images are open source and were taken from:
+    https://www.pexels.com
+    https://pixabay.com
+    https://www.flaticon.com
+
+ */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+
+

@@ -1,0 +1,70 @@
+/* ================================================================================================================== */
+/* ======================================   9.0 FIND US MAIN SECTION ================================================ */
+/* ================================================================================================================== */
+/* ======================================   9.1 FIND US  ============================================================ */
+.findUs{
+    border-top: var(--color-background-horizontal-lines) 1px solid;
+}
+.findUsWrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 2500px;
+}
+.findUsSection{
+    width: 30%;
+    margin-right: 20px;
+}
+.findUsSection p{
+    margin-bottom: 10px;
+}
+.findUsSectionText p:nth-child(3){
+    font-weight: bold;
+}
+.findUsSectionText, .socialMediaIconsFindUs{
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: var(--main-color-darker);
+    border: black 1px solid;
+}
+.findUsMap{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: -4px;
+}
+.findUsMap iframe{
+    width: 100%;
+}
+@media(max-width:1350px){
+    .findUs{
+        border-top: black 1px solid;
+    }
+    .findUsWrapper{
+        display: block;
+    }
+    .findUsSection{
+        width: 100%;
+        margin: 0;
+    }
+    .findUsSectionText, .socialMediaIconsFindUs{
+        margin-top: 0;
+        padding: 0;
+        background-color: inherit;
+        border: none;
+    }
+    .findUsSection{
+        background-color: var(--main-color-darker);
+        text-align: center;
+        padding: 20px 5% 20px 5%;
+        border-bottom: black 1px solid;
+    }
+    .findUsMap{
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: var(--color-background-horizontal-lines) 1px solid;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+/* ======================================   9.2 CONTACT US  ========================================================= */
+
+/* ====================== STYLING OF THIS SECTION THE SAME AS FOR CONTACT US ON HOME PAGE - 4.6 ===================== */

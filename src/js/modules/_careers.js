@@ -1,5 +1,5 @@
 (function () {
-    if ($('#careersId'))
+    if ($('#careersId').length)
     {
         const $jobTitle            = $('.jobTitle, .toggleSymbolJobDescription');
         const $jobDescription      = $('.jobDescription');

@@ -1,0 +1,56 @@
+.readMoreLink {
+    position: relative;
+    padding: 17px 22px;
+    transition: all 0.2s ease;
+    font-family: 'Patua One', cursive;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 28px;
+    border: black 1px solid;
+    background-color: var(--main-color-lighter);
+}
+.readMoreLink:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border-radius: 28px;
+    width: 57px;
+    height: 57px;
+    transition: all 0.3s ease;
+    /*border: black 1px solid;*/
+}
+.readMoreLink span {
+    position: relative;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+}
+.readMoreLink svg {
+    position: relative;
+    top: 0;
+    margin-left: 5px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2px;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+.readMoreLink:hover:before {
+    width: 101%;
+    background: #000;
+}
+.readMoreLink:hover svg {
+    transform: translateX(5px);
+    stroke: var(--main-color-darker);
+}
+.readMoreLink:hover{
+    color: var(--main-color-darker);
+}
+.readMoreLink:active {
+    transform: scale(0.96);
+}

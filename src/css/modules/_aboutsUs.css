@@ -1,0 +1,183 @@
+/* ================================================================================================================== */
+/* ======================================   7.0 ABOUT US MAIN SECTION  ============================================== */
+/* ================================================================================================================== */
+.aboutUs{
+    border-top: var(--color-background-horizontal-lines) 1px solid;
+}
+.aboutUs h3{
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+/* ======================================   7.1 OUR TEAM  =========================================================== */
+.ourTeam{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+    border-top: var(--color-background-horizontal-lines) 1px solid;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.teamMember{
+    grid-column: span 2;
+    perspective: 1000px;
+}
+.teamMember span{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.teamMember p{
+    margin-bottom: 10px;
+}
+.teamMember ul li{
+    list-style: disc;
+    margin-left: 30px;
+}
+.flipper{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.front{
+    position: relative;
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back{
+    position: absolute;
+    overflow-y: scroll;
+    transform: rotateY(180deg);
+    background-color: var(--main-color-darker);
+    padding: 20px;
+}
+.flip{
+    transform: rotateY(180deg);
+}
+
+@media(max-width:1350px) {
+    .teamMember{
+        grid-column: span 3;
+    }
+}
+@media(max-width:800px) {
+    .teamMember{
+        grid-column: span 6;
+    }
+    .aboutUs h3{
+        text-align: center;
+    }
+}
+@media (min-width: 4000px) {
+    .ourTeam, .aboutUs h3{
+        max-width: 2500px;
+        margin: 0 auto;
+    }
+}
+/* ======================================   7.2 ABOUT US  =========================================================== */
+.aboutUsSection{
+    padding-bottom: 10px;
+    border-bottom: black 1px solid;
+    border-top: black 1px solid;
+    text-align: center;
+    background-color: var(--main-color-darker);
+}
+.aboutUsSectionWrapper{
+    max-width: 2500px;
+    margin: 0 auto;
+}
+.aboutUsSection p{
+    margin-bottom: 10px;
+}
+/* ======================================   7.3 TIME LINE  ========================================================== */
+.aboutUsTimeLine h3{
+    border-bottom: var(--color-background-horizontal-lines) 1px solid;
+}
+.aboutUsTimeLine ul {
+    padding: 20px 0;
+}
+.aboutUsTimeLine ul li {
+    background: var(--main-color-darker);
+    position: relative;
+    margin: 0 auto;
+    width: 5px;
+    padding-bottom: 40px;
+}
+.aboutUsTimeLine ul li:last-child {
+    padding-bottom: 12px;
+}
+.aboutUsTimeLine ul li:before {
+    content: '';
+    background: var(--color-background);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--main-color-darker);
+    border-radius: 50%;
+}
+.timeLineContent {
+    background: var(--main-color-darker);
+    position: relative;
+    top: 12px;
+    width: 25vw;
+    padding: 20px;
+}
+.timeLineContent:before {
+    content: '';
+    background: var(--main-color-darker);
+    position: absolute;
+    top: 0;
+    width: 37px;
+    height: 5px;
+}
+.aboutUsTimeLine h4, .aboutUsTimeLine p {
+    text-align: center;
+}
+.aboutUsTimeLine ul li:nth-child(odd) .timeLineContent {
+    left: 50px;
+}
+.aboutUsTimeLine ul li:nth-child(odd) .timeLineContent:before {
+    left: -37px;
+}
+.aboutUsTimeLine ul li:nth-child(even) .timeLineContent {
+    left: calc(-25vw - 45px);
+}
+.aboutUsTimeLine ul li:nth-child(even) .timeLineContent:before {
+    right: -37px;
+}
+@media (max-width: 1350px) {
+    .aboutUsTimeLine ul li .timeLineContent {
+        width: 35vw;
+    }
+    .aboutUsTimeLine ul li:nth-child(even) .timeLineContent {
+        left: calc(-35vw - 45px);
+    }
+}
+@media (max-width: 800px) {
+    .aboutUsTimeLine ul li {
+        margin-left: 20px;
+    }
+    .aboutUsTimeLine ul li .timeLineContent {
+        width: calc(90vw - 100px);
+    }
+    .aboutUsTimeLine ul li .timeLineContent h2 {
+        text-align: initial;
+    }
+    .aboutUsTimeLine ul li:nth-child(even) .timeLineContent {
+        left: 50px;
+    }
+    .aboutUsTimeLine ul li:nth-child(even) .timeLineContent:before {
+        left: -37px;
+    }
+}
