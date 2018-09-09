@@ -32,6 +32,10 @@ This project is under the MIT License - see the LICENSE.md file for details.
 
 Extensive compatibility checks with different browsers have not been carried out. The website should be supported by most modern browsers, however, additional coding has to be done for the support of IE.
 
+### Responsiveness
+
+The website is relatively responsive, however, mobile-first approach has not been used. The current responsiveness level involves meta tags added to head of .html files, limited application of media queries and relative lengths. In order to achieve full responsiveness, the styling has to be rearranged to reflect mobile-first approach. Picture tags and different fav icons sizes should also be used.   
+
 ### Acknowledgments
 1. Menu items hover effects ("menuItem" class in main.css) based on: https://codepen.io/d2k/pen/jEmWXq created by Dominik Biedebach (https://codepen.io/d2k/)
    
