@@ -136,6 +136,9 @@
     transition: all 0.4s;
 }
 @media(max-width:1350px){
+    .jobTitle{
+        font-size: 16px;
+    }
     .applicationTitle1{
         display: none;
     }

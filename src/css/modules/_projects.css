@@ -221,6 +221,9 @@
     .appText{
         width: 60%;
     }
+    .appText ul{
+        margin-left: 35px;
+    }
 
 }
 @media(max-width: 800px){
@@ -234,10 +237,12 @@
     }
     .appText{
         width: 100%;
-        text-align: center;
+        padding: 0 20px;
+        text-align: left;
     }
+
     .appText p{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 }
