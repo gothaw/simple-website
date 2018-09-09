@@ -1,0 +1,61 @@
+/* ================================================================================================================== */
+/* =====================================   10. GENERAL MEDIA QUERIES ================================================ */
+/* ================================================================================================================== */
+
+@media(max-width:800px){
+    .headerImg1, .headerImg2, .headerImg3, .aboutUsHomeImg, .contactUsImg, .imgWebProject, .applicationImg{
+        background-attachment:scroll;
+    }
+}
+@media(min-width:2500px){
+    .headerImg1, .headerImg2, .headerImg3, .aboutUsHomeImg, .contactUsImg, .imgWebProject, .applicationImg{
+        background-attachment:scroll;
+    }
+}
+@media(max-width: 1350px){
+    .inner1{
+        width: 100%;
+    }
+    .inner2{
+        width: 90%;
+    }
+}
+@media(min-width: 4000px){
+    .inner1{
+        width: 100%;
+        max-width: 2500px;
+    }
+    .inner2{
+        width: 100%;
+        max-width: 2500px;
+    }
+}
+/* ================================================================================================================== */
+/* =====================================   11. ACKNOWLEDGMENTS ====================================================== */
+/* ================================================================================================================== */
+/*
+    1. Menu items hover effects ("menuItem" class) based on:
+    https://codepen.io/d2k/pen/jEmWXq
+    created by Dominik Biedebach (https://codepen.io/d2k/)
+
+    2. Button with "readMoreLink" class based on:
+    https://codepen.io/andreasstorm/pen/oqKbLq
+    created by Andreas Storm (https://codepen.io/andreasstorm/)
+
+    3. Time Line (section 7.3) based on:
+    https://codepen.io/ArnaudBalland/pen/rLeQgd
+    created by Arnaud Balland (https://codepen.io/ArnaudBalland/)
+
+    4. All images are open source and were taken from:
+    https://www.pexels.com
+    https://pixabay.com
+    https://www.flaticon.com
+
+ */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */
+/* =====================   SECTION ==== */

@@ -34,7 +34,7 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader"
+                    "css-loader?url=false"
                 ]
             }
         ]
@@ -42,7 +42,6 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "../css/main.css",
-            chunkFilename: "../css/chunk.css"
         })
     ]
 };
