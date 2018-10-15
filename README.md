@@ -1,6 +1,6 @@
 # simple-website
 
-Frontend design of a simple static website of an IT company.
+Frontend design of a simple static website
 
 **Website structure:**
 
@@ -34,7 +34,7 @@ Extensive compatibility checks with different browsers have not been carried out
 
 ### Responsiveness
 
-The website is relatively responsive, however, mobile-first approach has not been used. The current responsiveness level involves meta tags added to head of .html files, limited application of media queries and relative lengths. In order to achieve full responsiveness, the styling has to be rearranged to reflect mobile-first approach. Picture tags and different fav icons sizes should also be used.   
+The website is relatively responsive, however, mobile-first approach has not been used. The current responsiveness level involves meta tags added to head of .html files, some application of media queries and relative lengths. 
 
 ### Acknowledgments
 1. Menu items hover effects ("menuItem" class in main.css) based on: https://codepen.io/d2k/pen/jEmWXq created by Dominik Biedebach (https://codepen.io/d2k/)
